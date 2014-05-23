@@ -51,7 +51,7 @@ function onEachFeature(feature, layer) {
 }
 
 function updateInfo(props) {
-  $('#info').text(props ? 'Ausgewählter Wahlkreis: ' + props.bezirkname + '(' + props.cartodb_id + ')' : 'Addresse eingeben oder über Wahlkreis fahren')
+  $('#info').text(props ? 'Ausgewählter Wahlbezirk: ' + props.bezirkname + '(' + props.cartodb_id + ')' : 'Klicken sie auf einen Wahlbezirk um die Kandidaten anzuzeigen.')
   $('#candidates').html(props ? template(candidates[props.cartodb_id]) : '');
 }
 
